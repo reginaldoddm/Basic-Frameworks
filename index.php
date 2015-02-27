@@ -12,5 +12,4 @@ require_once SITE_PATH.'application'.DS.'BaseModel.php';
 require_once SITE_PATH.'application'.DS.'Load.php';
 require_once SITE_PATH.'application'.DS.'Registry.php';
 
-
 var_dump(get_included_files());
