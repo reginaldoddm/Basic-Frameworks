@@ -1,2 +1,2 @@
 # Basic-Frameworks
-Estudo de como criar um mini frameworks PHP
+Estudo de como criar um mini frameworks PHP.
