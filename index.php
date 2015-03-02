@@ -11,5 +11,6 @@ require_once SITE_PATH.'application'.DS.'BaseController.php';
 require_once SITE_PATH.'application'.DS.'BaseModel.php';
 require_once SITE_PATH.'application'.DS.'Load.php';
 require_once SITE_PATH.'application'.DS.'Registry.php';
+require_once SITE_PATH.'controllers'.DS.'indexController.php';
 
-var_dump(get_included_files());
+call_user_func(array('indexController', 'index'));
