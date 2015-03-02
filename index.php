@@ -13,4 +13,11 @@ require_once SITE_PATH.'application'.DS.'Load.php';
 require_once SITE_PATH.'application'.DS.'Registry.php';
 require_once SITE_PATH.'controllers'.DS.'indexController.php';
 
-call_user_func(array('indexController', 'index'));
+$registry = Registry::getInstance();
+$registry->teste = 'Hello World';
+
+$controller = new indexController();
+
+call_user_func(array($controller, 'index'));
+
+echo '<pre>'.$registry->myVar.'</pre>';
