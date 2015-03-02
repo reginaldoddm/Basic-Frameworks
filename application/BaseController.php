@@ -1,5 +1,7 @@
 <?php
 
+use application\Registry;
+
 abstract class BaseController
 {
 	

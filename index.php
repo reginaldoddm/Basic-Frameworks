@@ -1,5 +1,7 @@
 <?php
 
+use \application\Registry;
+
 define('DS', DIRECTORY_SEPARATOR);
 define('SITE_PATH', realpath(dirname(__FILE__)) . DS);
 
