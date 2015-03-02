@@ -1,5 +1,9 @@
 <?php
 
+namespace controllers\IndexController;
+
+use application\BaseController;
+
 class indexController extends BaseController
 {
     

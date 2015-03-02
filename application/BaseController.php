@@ -1,7 +1,15 @@
 <?php
 
+namespace application\BaseController;
+
 use application\Registry;
 
+/**
+ * Class BaseController
+ * 
+ * @author Reginaldo
+ * @access abstract
+ */
 abstract class BaseController
 {
 	
