@@ -1,6 +1,6 @@
 <?php
 
-namespace controllers\IndexController;
+namespace controllers;
 
 use application\BaseController;
 
