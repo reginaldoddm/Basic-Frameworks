@@ -7,6 +7,30 @@ class Load
 {
 	
     /**
+     * Load View
+     * @param string $view
+     * @param array $args
+     * @throws \Exception
+     * @return boolean
+     */
+    public function view($view, array $args = null){
+        
+        $viewPath = SITE_PATH.'views'.DS.$view.'View.php';
+        
+        if (is_readable($viewPath)) {
+        	
+            if (isset($args)) {
+            	extract($args);
+            }
+            
+            require_once $viewPath;
+            return true;
+        }
+        throw new \Exception("View {$view} not existis");
+        
+    }    
+    
+    /**
      * load model 
      * 
      * @param string $modelName model name

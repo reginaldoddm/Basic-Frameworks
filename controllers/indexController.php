@@ -16,9 +16,10 @@ class indexController extends BaseController
     	echo __METHOD__;
     	$this->load->model('Post');
     	
-    	echo '<pre>';
-    	var_dump($this->Post->getEntries());
-    	echo '</pre>';
+    	$data['title'] = 'Dynamic Title';
+    	$data['posts'] = $this->Post->getEntries();
+    	
+    	$this->load->view('index', $data);
     }
     
 }
