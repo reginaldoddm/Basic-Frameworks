@@ -1,16 +1,20 @@
 <?php
 
+
+/**
+ * 
+ * Class BaseController
+ *
+ * @author Reginaldo
+ * @abstract
+ * 
+ */
+
 namespace application;
 
 use application\Registry;
 use application\Load;
 
-/**
- * Class BaseController
- * 
- * @author Reginaldo
- * @access abstract
- */
 abstract class BaseController
 {
 	
