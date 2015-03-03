@@ -14,9 +14,11 @@ class indexController extends BaseController
     public function index()
     {
     	echo __METHOD__;
-    	print_r($this->_regisrty->teste);
+    	$this->load->model('Post');
     	
-    	$this->_regisrty->myVar = 'Hello from my controller';
+    	echo '<pre>';
+    	var_dump($this->Post->getEntries());
+    	echo '</pre>';
     }
     
 }

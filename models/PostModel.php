@@ -1,5 +1,7 @@
 <?php
 
+use application\BaseModel;
+
 class PostModel extends BaseModel
 {
     
@@ -10,5 +12,6 @@ class PostModel extends BaseModel
         $return[0] = array('title' => 'Hello World');
         $return[1] = array('title' => 'Hello Universe');
         
+        return $return;
     }
 }

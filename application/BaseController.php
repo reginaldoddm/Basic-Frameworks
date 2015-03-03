@@ -3,6 +3,7 @@
 namespace application;
 
 use application\Registry;
+use application\Load;
 
 /**
  * Class BaseController
@@ -13,13 +14,27 @@ use application\Registry;
 abstract class BaseController
 {
 	
-    protected  $_regisrty;
+    protected  $_registry;
+    protected $load;
     
     public function __construct()
     {
-        $this->_regisrty = Registry::getInstance();
+        $this->_registry = Registry::getInstance();
+        $this->load = new Load();
     }
     
     abstract  public function index();
+    
+    
+    public function __get($key)
+    {
+    	$return = $this->_registry->$key;
+    	
+    	if ($return) {
+    		return $return;
+    	}
+    	
+    	return false;
+    }
     
 }
