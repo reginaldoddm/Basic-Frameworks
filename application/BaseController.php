@@ -1,6 +1,6 @@
 <?php
 
-namespace application\BaseController;
+namespace application;
 
 use application\Registry;
 
