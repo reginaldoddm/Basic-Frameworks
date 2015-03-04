@@ -13,7 +13,7 @@ class Load
      * @throws \Exception
      * @return boolean
      */
-    public function view($view, array $args = null){
+    public static function view($view, array $args = null){
         
         $viewPath = SITE_PATH.'views'.DS.$view.'View.php';
         
@@ -36,7 +36,7 @@ class Load
      * @param string $modelName model name
      * @throws \Exception
      */
-    public function model($modelName)
+    public static function model($modelName)
     {
         
         $simpleName = $modelName;
@@ -55,8 +55,7 @@ class Load
         }
         
  
-        $registry = Registry::getInstance();
-        $registry->$simpleName = new $modelName;
+        return new $modelName;
         
        
         

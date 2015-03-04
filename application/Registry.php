@@ -24,7 +24,6 @@ class Registry
         if ( ! self::$_instance instanceof self) {
         	self::$_instance = new Registry();
         }
-        
         return self::$_instance;
     }
     

@@ -2,6 +2,7 @@
 namespace controllers;
 
 use application\BaseController;
+use application\Load;
 
 class indexController extends BaseController
 {
@@ -13,13 +14,19 @@ class indexController extends BaseController
 	
     public function index()
     {
-    	echo __METHOD__;
-    	$this->load->model('Post');
+    	
+    	$posts = Load::model('Post');
     	
     	$data['title'] = 'Dynamic Title';
-    	$data['posts'] = $this->Post->getEntries();
+    	$data['posts'] = $posts->getEntries();
     	
-    	$this->load->view('index', $data);
+    	Load::view('index', $data);
+    }
+    
+    
+    public function test()
+    {
+        echo __METHOD__;
     }
     
 }

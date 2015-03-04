@@ -59,7 +59,15 @@ class Request
     {
         return $this->_method;
     }
-    
+
+
+    /**
+     * Resgata os argumentps
+     */
+    public function getArgs()
+    {
+        return $this->_args;
+    }
     
     /**
      * Trata as parte da REQUEST_URI

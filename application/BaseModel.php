@@ -1,6 +1,4 @@
 <?php
 namespace application;
 
-abstract class BaseModel{
-	
-}
+abstract class BaseModel{}
