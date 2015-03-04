@@ -23,4 +23,12 @@ class Request
     {
         return $this->_controller;
     }
+    
+    
+    public function getMethod()
+    {
+        return $this->_method;
+    }
 }
+    
+    
