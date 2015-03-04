@@ -21,4 +21,10 @@ class Request
 		  var_dump($parts);
 		echo '</pre>';
 	}
+	
+	
+    public function getController()
+    {
+        return $this->_controller;
+    }
 }
